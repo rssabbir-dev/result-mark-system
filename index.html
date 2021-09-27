@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RESULT</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="main_after_submit.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Header Section Start From Here -->
+			<header class="header">
+				<!-- Header Left Side Logo -->
+				<div class="header-left">
+					<img src="IMG/bd_logo.png" alt="" />
+				</div>
+				<!-- Header Right Side Title Here -->
+				<div class="header-right">
+					<h3 id="hr-t">Ministry of Education</h3>
+					<h3 id="hr-m">
+						Intermediate and Secondaary Education Boards <br />
+						Bangladesh
+					</h3>
+					<p id="hr-f">Official Website of Education Board</p>
+				</div>
+			</header>
+			<!-- Header Section End Here -->
+			<!-- Main Section Start From Here -->
+			<main class="main">
+				<!-- Main Input Fields for Search Data From Server Start Here -->
+				<section class="main-before-submit">
+					<!-- Examination Select Field -->
+					<div>
+						<span class="input-title">Examination : </span>
+						<select name="" id="exam" class="input-box-style">
+							<option value="HSC">HSC/Alim/Equivalent</option>
+							<option value="JSC">JSC/JDC</option>
+						</select>
+					</div>
+					<!-- Year Select Field -->
+					<div>
+						<span class="input-title">Year : </span>
+						<select name="" id="year" class="input-box-style">
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+						</select>
+					</div>
+
+					<!-- Board Select Field -->
+					<div>
+						<span class="input-title">Board : </span>
+						<select name="" id="board" class="input-box-style">
+							<option value="Cumilla">Cumilla</option>
+							<option value="Dhaka">Dhaka</option>
+						</select>
+					</div>
+					<!-- Roll Input Field -->
+					<div>
+						<span class="input-title">Roll : </span>
+						<input
+							type="number"
+							name=""
+							id="roll"
+							class="input-box-style"
+							value=""
+						/>
+					</div>
+
+					<!-- Reg: No Input Field -->
+					<div>
+						<span class="input-title">Reg: No : </span>
+						<input
+							type="number"
+							name=""
+							id="reg-no"
+							class="input-box-style"
+							value=""
+						/>
+					</div>
+					<!-- Robot Verify Input Field -->
+					<div>
+						<span class="input-title"
+							><span id="verify-sum1">Demo </span>+<span
+								id="verify-sum2"
+							>
+								Demo</span
+							>
+							:</span
+						>
+						<input
+							type="number"
+							name=""
+							id="verify-sum"
+							value=""
+							class="input-box-style"
+						/>
+					</div>
+					<div class="input-btn-style">
+						<input type="reset" value="Reset" />
+						<input
+							type="submit"
+							value="Submit"
+							name=""
+							id="submit"
+							onclick="submitBtn()"
+						/>
+					</div>
+				</section>
+				<!-- Main Input Fields for Search Data From Server End Here -->
+				<section class="main-after-submit">
+					<h2>JSC/JDC Result 2016</h2>
+					<table border="1px">
+						<tr>
+							<td>Roll No</td>
+							<td id="roll-output">536500</td>
+							<td>Name</td>
+							<td id="name-output">MD. SABBIR HOSEN</td>
+						</tr>
+						<tr>
+							<td>Board</td>
+							<td id="board-output">COMILLA</td>
+							<td id="father-name-output">Father's Name</td>
+							<td>MD. NURUL AMIN</td>
+						</tr>
+						<tr>
+							<td>Group</td>
+							<td></td>
+							<td id="mother-name-output">Mother's Name</td>
+							<td>AYESHA AKTER</td>
+						</tr>
+						<tr>
+							<td>Type</td>
+							<td>REGULAR</td>
+							<td id="date-of-birth-output">Date of Birth</td>
+							<td>18-03-2004</td>
+						</tr>
+						<tr>
+							<td>Result</td>
+							<td id="result-output">PASSED</td>
+							<td id="school-output">Institute</td>
+							<td>CHANDAKARA SHAKANDER ALI SECONDARY SCHOOL</td>
+						</tr>
+						<tr>
+							<td id="gpa-output">GPA</td>
+							<td colspan="3">4.25</td>
+						</tr>
+					</table>
+					<h2>Grade Sheet</h2>
+					<table border="1px">
+						<thead>
+							<tr>
+								<th>Code</th>
+								<th>Subject</th>
+								<th>Grade</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>101</td>
+								<td>BANGLA</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>107</td>
+								<td>ENGLISH</td>
+								<td>A-</td>
+							</tr>
+							<tr>
+								<td>109</td>
+								<td>MATHEMATICS+</td>
+								<td>A+</td>
+							</tr>
+							<tr>
+								<td>127</td>
+								<td>SCIENCE</td>
+								<td>A-</td>
+							</tr>
+							<tr>
+								<td>111</td>
+								<td>ISLAM AND MORAL EDUCATION</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>150</td>
+								<td>BANGLADESH AND GLOBAL STUDIES</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>147</td>
+								<td>PHYSICAL EDUCATION AND HEALTH</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>148</td>
+								<td>ARTS AND CRAFTS</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>154</td>
+								<td>
+									INFORMATION AND COMMUNICATION TECHNOLOGY
+								</td>
+								<td>A+</td>
+							</tr>
+							<tr>
+								<td>155</td>
+								<td>WORK AND LIFE ORIENTED EDUCATION</td>
+								<td>A-</td>
+							</tr>
+							<tr>
+								<td>134</td>
+								<td>AGRICULTURE STUDIES</td>
+								<td>A</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</main>
+			<!-- Main Section End Here -->
+			<!-- Footer Section Start From Here -->
+			<footer class="footer">
+				<div class="footer-left">
+					<p>
+						&copy;2005-2020 Ministry of Education. All rights
+						reserved.
+					</p>
+				</div>
+				<div class="footer-right">
+					<p>Powered by</p>
+					<img src="IMG/tbl_logo.png" alt="" />
+				</div>
+			</footer>
+			<!-- Footer Section End Here -->
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

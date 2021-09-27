@@ -1,0 +1,24 @@
+table {
+	border-collapse: collapse;
+	font-size: 0.7rem;
+	width: 100%;
+	border-color: aliceblue;
+}
+th {
+	padding: 5px;
+	background: #d2d2d2;
+}
+tr,
+td {
+	padding: 5px;
+}
+tr:nth-child(even) {
+	background: #e6e6e6;
+}
+tr:nth-child(odd) {
+	background: #efefef;
+}
+.main-after-submit h2 {
+	text-align: center;
+	padding: 10px 0px;
+}
