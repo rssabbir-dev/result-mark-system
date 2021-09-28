@@ -14,7 +14,9 @@
 			<header class="header">
 				<!-- Header Left Side Logo -->
 				<div class="header-left">
-					<img src="IMG/bd_logo.png" alt="" />
+					<a href="index.html"
+						><img src="IMG/bd_logo.png" alt=""
+					/></a>
 				</div>
 				<!-- Header Right Side Title Here -->
 				<div class="header-right">
@@ -30,7 +32,11 @@
 			<!-- Main Section Start From Here -->
 			<main class="main">
 				<!-- Main Input Fields for Search Data From Server Start Here -->
-				<section class="main-before-submit">
+				<section
+					class="main-before-submit"
+					id="main-before-submit"
+					style="display: block"
+				>
 					<!-- Examination Select Field -->
 					<div>
 						<span class="input-title">Examination : </span>
@@ -109,7 +115,11 @@
 					</div>
 				</section>
 				<!-- Main Input Fields for Search Data From Server End Here -->
-				<section class="main-after-submit">
+				<section
+					class="main-after-submit"
+					id="main-after-submit"
+					style="display: none"
+				>
 					<h2>JSC/JDC Result 2016</h2>
 					<table border="1px">
 						<tr>
@@ -234,6 +244,7 @@
 			</footer>
 			<!-- Footer Section End Here -->
 		</div>
+		<script src="studentData.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>
